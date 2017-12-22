@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back_1"
+    tools:context="com.chaitanya.sanoriya.weather.MapsActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.chaitanya.sanoriya.weather.MapsActivity" />
+
+    <EditText
+        android:id="@+id/locate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:hint="Location?"
+        android:singleLine="true"
+        android:background="@mipmap/bg"
+        android:padding="10dp"
+        android:scaleY="1.2"
+        android:scaleX="1.05"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="24dp"
+        android:background="@mipmap/bg_1"
+        android:padding="10dp"
+        android:id="@+id/user_text"
+        android:textColor="#ffffff"
+        android:gravity="center"/>
+</RelativeLayout>
